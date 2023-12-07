@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=IM+Fell+Double+Pica+SC&family=IM+Fell+Great+Primer+SC&family=Jomolhari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.fondo-experiencia {
+  height: 100vh;
+  background-image: url("../assets//images//fondo-experiencia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-informacion-experiencia {
+  background-color: rgba(0, 0, 0, 0.4);
+  max-width: 90%;
+  height: 0 auto;
+  margin-top: 7rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 30px 500px;
+}
+
+.titulo-apartado {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-apartado-experiencia {
+  color: white;
+  font-family: "IM Fell Double Pica", serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.imagen-experiencia {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.imagen-formacion-profesora {
+  width: 500px;
+}
+
+.informacion-de-experiencia {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: "Jomolhari", serif;
+  height: auto;
+  width: auto;
+  margin: 1rem;
+  padding: 1rem;
+  overflow: auto;
+  border: 1px solid white;
+}
+
+.wipburger {
+  margin-bottom: 1rem;
+}
+
+.nombre-lugar {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.temporalidad {
+  font-size: 1.2rem;
+  font-family: "Cardo", serif;
+}
+
+.nombre-puesto {
+  font-family: "Cardo", serif;
+  font-size: 1.5rem;
+}
+
+.descripcion-de-trabajo {
+  font-size: 1rem;
+}
+
+@media (max-width: 799px) {
+  .fondo-experiencia {
+    overflow-y: scroll;
+  }
+
+  .imagen-formacion-profesora {
+    width: 300px;
+    margin-top: 1rem;
+  }
+
+  .contenedor-informacion-experiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37rem;
+    padding-bottom: 10rem;
+    box-sizing: border-box;
+  }
+
+  .informacion-de-experiencia {
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    border: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contenedor-informacion-experiencia {
+    margin-top: 5rem;
+  }
+
+  .imagen-formacion-profesora {
+    width: 400px;
+    margin-top: 1rem;
+  }
+
+  .contenedor-informacion-experiencia {
+    margin-top: 7rem;
+    padding-bottom: 2rem;
+  }
+
+  .informacion-de-experiencia {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 2rem;
+    padding: 3rem;
+  }
+}

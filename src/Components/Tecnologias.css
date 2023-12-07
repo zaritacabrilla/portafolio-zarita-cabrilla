@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=IM+Fell+Double+Pica+SC&family=IM+Fell+Great+Primer+SC&family=Jomolhari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.fondo-tecnologias{
+    height: 100vh;
+    background-image: url("../assets//images//fondo-tecnologias.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor-informacion-tecnologias {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 90%;
+    height: 0 auto;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 30px 500px;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .titulo-apartado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titulo-apartado-tecnologias {
+    color: white;
+    font-family: "IM Fell Double Pica", serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor-iconos-tecnologias {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    align-content: center;
+    grid-column: 1 /3;
+    gap: 2rem;
+  }
+
+  .icono-tecnologias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icono {
+    width: 130px;
+  }
+
+  @media screen and (max-width: 670px) {
+    .fondo-tecnologias {
+      overflow-y: scroll;
+    }
+  
+    .contenedor-informacion-tecnologias {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 53rem;
+      padding-bottom: 10rem;
+    }
+
+    .contenedor-iconos-tecnologias {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 671px) and (max-width: 799px) {
+  
+    .contenedor-informacion-tecnologias {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .contenedor-iconos-tecnologias {
+      display: grid;
+      grid-template-columns: 200px 200px 150px;
+      justify-content: center;
+      align-content: center;
+      gap: 1.5rem;
+    }
+    
+    .icono-restapi {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      grid-column: 1 / 4;
+    }
+  
+    .icono {
+      width: 120px;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+  
+    .contenedor-informacion-tecnologias {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+    }
+  }

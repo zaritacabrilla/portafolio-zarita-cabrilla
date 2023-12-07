@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.fondo-sobre-mi {
+  height: 100vh;
+  background-image: url("../assets//images//fondo-sobre-mi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-snitch-dorada {
+  width: 200px;
+  position: absolute;
+  height: auto;
+  animation: moveImage 30s infinite;
+}
+
+@keyframes moveImage {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  20% {
+    left: 90%;
+    top: 0;
+  }
+  30% {
+    left: 0;
+    top: 50%;
+  }
+  40% {
+    left: 90%;
+    top: 90%;
+  }
+  50% {
+    left: 0;
+    top: 90%;
+  }
+  /* Siguientes movimientos de reversa */
+  60% {
+    left: 0;
+    top: 85;
+  }
+  70% {
+    left: 90%;
+    top: 90%;
+  }
+  80% {
+    left: 0;
+    top: 50%;
+  }
+  90% {
+    left: 90%;
+    top: 0%;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.contenedor-informacion-sobre-mi {
+  background-color: rgba(0, 0, 0, 0.4);
+  max-width: 90%;
+  height: 0 auto;
+  margin-top: 7rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-imagen-harry-escoba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-apartado {
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.titulo-apartado-sobre-mi {
+  color: white;
+  font-family: "IM Fell Double Pica", serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.informacion-sobre-mi {
+  color: white;
+  font-size: 20px;
+  font-family: "Jomolhari", serif;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+}
+
+@media (max-width: 799px) {
+  .contenedor-informacion-sobre-mi {
+    margin-top: 0;
+  }
+
+  .titulo-apartado {
+    margin-bottom: 0.9rem;
+  }
+
+  .imagen-harry-escoba {
+    width: 300px;
+    margin-top: 1rem;
+  }
+
+  .informacion-sobre-mi {
+    padding: 0.5rem;
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .imagen-snitch-dorada {
+    width: 120px;
+  }
+}
+
+@media (min-width: 800px) {
+  .contenedor-informacion-sobre-mi {
+    margin-top: 9rem;
+  }
+
+  .titulo-apartado {
+    margin-bottom: 0.2rem;
+  }
+
+  .imagen-harry-escoba {
+    width: 350px;
+    margin-top: 1rem;
+  }
+
+  .informacion-sobre-mi {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .imagen-snitch-dorada {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contenedor-informacion-sobre-mi {
+    margin-top: 5rem;
+  }
+
+  .imagen-harry-escoba {
+    width: 370px;
+    margin-top: 1rem;
+  }
+
+  .informacion-sobre-mi {
+    padding: 1rem;
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+  }
+
+  .imagen-snitch-dorada {
+    width: 170px;
+  }
+}
+

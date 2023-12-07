@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=IM+Fell+Double+Pica+SC&family=IM+Fell+Great+Primer+SC&family=Jomolhari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.fondo-aptitudes {
+  height: 100vh;
+  background-image: url("../assets//images//fondo-aptitudes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-informacion-aptitudes {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 90%;
+  height: 0 auto;
+  margin-top: 120px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 30px 500px;
+  justify-content: center;
+  align-content: center;
+}
+
+.titulo-apartado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-apartado-aptitudes {
+  color: white;
+  font-family: "IM Fell Double Pica", serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apartado-aptitudes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aptitud {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  font-family: "IM Fell Double Pica", serif;
+  margin-right: 2rem;
+  padding: 2rem;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .contenedor-informacion-aptitudes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .apartado-aptitudes {
+    gap: 0.5rem;
+  }
+
+  .aptitud {
+    text-align: center;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+  .contenedor-informacion-aptitudes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-rows: 30px 400px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .aptitud {
+    text-align: center;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1429px) {
+  .contenedor-informacion-aptitudes {
+    width: 70%;
+    height: 70%;
+  }
+}

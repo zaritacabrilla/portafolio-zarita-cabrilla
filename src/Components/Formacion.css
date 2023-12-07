@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=IM+Fell+Double+Pica+SC&family=IM+Fell+Great+Primer+SC&family=Jomolhari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.fondo-formacion {
+  height: 100vh;
+  background-image: url("../assets/images/fondo-formacion.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-informacion-formacion {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 90%;
+  height: 0 auto;
+  margin-top: 7rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 30px 500px;
+  overflow: visible;
+}
+
+.titulo-apartado {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-apartado-formacion {
+  color: white;
+  font-family: "IM Fell Double Pica", serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.imagen-formacion {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  overflow: visible;
+}
+
+.imagen-formacion-dementor {
+  width: 500px;
+}
+
+.informacion-de-formacion {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: "IM Fell Double Pica", serif;
+  margin-left: 100px;
+}
+
+.texto {
+  margin-top: 1rem;
+}
+
+.titulo-lugar {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.periodo-realizacion {
+  font-size: 1.2rem;
+}
+
+.titulo-curso {
+  font-family: "Cardo", serif;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .fondo-formacion {
+    overflow-y: scroll;
+  }
+
+  .imagen-formacion-dementor {
+    margin-top: 4rem;
+    width: 230px;
+  }
+
+  .contenedor-informacion-formacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40rem;
+    padding-bottom: 10rem;
+  }
+
+  .informacion-de-formacion {
+    gap: 0.5rem;
+    margin-left: 1.2rem;
+  }
+
+  .texto {
+    margin-top: 0.5rem;
+  }
+  
+  .titulo-lugar {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  
+  .periodo-realizacion {
+    font-size: 1.2rem;
+  }
+  
+  .titulo-curso {
+    font-family: "Cardo", serif;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+  .fondo-formacion {
+    overflow-y: scroll;
+  }
+
+  .imagen-formacion-dementor {
+    margin-top: 4rem;
+    width: 300px;
+  }
+
+  .contenedor-informacion-formacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40rem;
+    padding-bottom: 10rem;
+  }
+
+  .informacion-de-formacion {
+    text-align: center;
+    gap: 1rem;
+    margin-left: 1.2rem;
+  }
+
+  .texto {
+    margin-top: 0.5rem;
+  }
+  
+  .titulo-lugar {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  
+  .periodo-realizacion {
+    font-size: 1.2rem;
+  }
+  
+  .titulo-curso {
+    font-family: "Cardo", serif;
+    font-size: 1.3rem;
+  }
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1209px) {
+  .imagen-formacion-dementor {
+    width: 500px;
+  }
+
+  .contenedor-informacion-formacion {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90%;
+    height: 0 auto;
+    margin-top: 7rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30px 500px;
+    overflow: visible;
+  }
+
+  .informacion-de-formacion {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: "IM Fell Double Pica", serif;
+    margin-left: 1rem;
+  }
+  
+  .texto {
+    margin-top: 1rem;
+  }
+  
+  .titulo-lugar {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  
+  .periodo-realizacion {
+    font-size: 1.1rem;
+  }
+  
+  .titulo-curso {
+    font-family: "Cardo", serif;
+    font-size: 1rem;
+  }
+}
